@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9A7266627E30D93009E4F3E /* AlertAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A7266527E30D93009E4F3E /* AlertAppear.swift */; };
 		B9C5A3DE27E2B60B001D2E5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C5A3DD27E2B60B001D2E5E /* AppDelegate.swift */; };
 		B9C5A3E027E2B60B001D2E5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C5A3DF27E2B60B001D2E5E /* SceneDelegate.swift */; };
 		B9C5A3E227E2B60B001D2E5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C5A3E127E2B60B001D2E5E /* ViewController.swift */; };
 		B9C5A3E527E2B60B001D2E5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9C5A3E327E2B60B001D2E5E /* Main.storyboard */; };
 		B9C5A3E727E2B60C001D2E5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C5A3E627E2B60C001D2E5E /* Assets.xcassets */; };
 		B9C5A3EA27E2B60C001D2E5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9C5A3E827E2B60C001D2E5E /* LaunchScreen.storyboard */; };
+		B9F3025427E2CC7D007A117E /* AdditionNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F3025327E2CC7D007A117E /* AdditionNameViewController.swift */; };
+		B9F3025627E2CCAB007A117E /* CheckItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F3025527E2CCAB007A117E /* CheckItemsTableViewCell.swift */; };
+		B9F3025827E2CCD5007A117E /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B9F3025727E2CCD5007A117E /* .swiftlint.yml */; };
+		B9F3025B27E2D5CD007A117E /* ChangeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F3025A27E2D5CD007A117E /* ChangeNameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B9A7266527E30D93009E4F3E /* AlertAppear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAppear.swift; sourceTree = "<group>"; };
 		B9C5A3DA27E2B60B001D2E5E /* KotaKadai16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KotaKadai16.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9C5A3DD27E2B60B001D2E5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9C5A3DF27E2B60B001D2E5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		B9C5A3E627E2B60C001D2E5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9C5A3E927E2B60C001D2E5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9C5A3EB27E2B60C001D2E5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9F3025327E2CC7D007A117E /* AdditionNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionNameViewController.swift; sourceTree = "<group>"; };
+		B9F3025527E2CCAB007A117E /* CheckItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckItemsTableViewCell.swift; sourceTree = "<group>"; };
+		B9F3025727E2CCD5007A117E /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		B9F3025A27E2D5CD007A117E /* ChangeNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +69,15 @@
 				B9C5A3DD27E2B60B001D2E5E /* AppDelegate.swift */,
 				B9C5A3DF27E2B60B001D2E5E /* SceneDelegate.swift */,
 				B9C5A3E127E2B60B001D2E5E /* ViewController.swift */,
+				B9A7266527E30D93009E4F3E /* AlertAppear.swift */,
+				B9F3025527E2CCAB007A117E /* CheckItemsTableViewCell.swift */,
+				B9F3025327E2CC7D007A117E /* AdditionNameViewController.swift */,
+				B9F3025A27E2D5CD007A117E /* ChangeNameViewController.swift */,
 				B9C5A3E327E2B60B001D2E5E /* Main.storyboard */,
 				B9C5A3E627E2B60C001D2E5E /* Assets.xcassets */,
 				B9C5A3E827E2B60C001D2E5E /* LaunchScreen.storyboard */,
 				B9C5A3EB27E2B60C001D2E5E /* Info.plist */,
+				B9F3025727E2CCD5007A117E /* .swiftlint.yml */,
 			);
 			path = KotaKadai16;
 			sourceTree = "<group>";
@@ -77,6 +92,7 @@
 				B9C5A3D627E2B60B001D2E5E /* Sources */,
 				B9C5A3D727E2B60B001D2E5E /* Frameworks */,
 				B9C5A3D827E2B60B001D2E5E /* Resources */,
+				B9F3025927E2CD01007A117E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -125,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9F3025827E2CCD5007A117E /* .swiftlint.yml in Resources */,
 				B9C5A3EA27E2B60C001D2E5E /* LaunchScreen.storyboard in Resources */,
 				B9C5A3E727E2B60C001D2E5E /* Assets.xcassets in Resources */,
 				B9C5A3E527E2B60B001D2E5E /* Main.storyboard in Resources */,
@@ -133,14 +150,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B9F3025927E2CD01007A117E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B9C5A3D627E2B60B001D2E5E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9F3025B27E2D5CD007A117E /* ChangeNameViewController.swift in Sources */,
 				B9C5A3E227E2B60B001D2E5E /* ViewController.swift in Sources */,
 				B9C5A3DE27E2B60B001D2E5E /* AppDelegate.swift in Sources */,
+				B9F3025427E2CC7D007A117E /* AdditionNameViewController.swift in Sources */,
 				B9C5A3E027E2B60B001D2E5E /* SceneDelegate.swift in Sources */,
+				B9F3025627E2CCAB007A117E /* CheckItemsTableViewCell.swift in Sources */,
+				B9A7266627E30D93009E4F3E /* AlertAppear.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
