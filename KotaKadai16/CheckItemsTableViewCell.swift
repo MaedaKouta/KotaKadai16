@@ -16,4 +16,5 @@ class CheckItemsTableViewCell: UITableViewCell {
         checkImage.isHidden = !checkItem.isChecked
         nameLabel.text = checkItem.name
     }
+
 }

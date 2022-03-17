@@ -37,4 +37,5 @@ class ChangeNameViewController: UIViewController {
         self.name = name
         self.choosingIndex = index
     }
+
 }

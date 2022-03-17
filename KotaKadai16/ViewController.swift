@@ -56,6 +56,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBAction func cancelExit(segue: UIStoryboardSegue) {
     }
+
 }
 
 extension ViewController: AdditionNameViewControllerDelegate, ChangeNameViewControllerDelegate {

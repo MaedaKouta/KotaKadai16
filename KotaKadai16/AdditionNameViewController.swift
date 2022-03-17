@@ -25,4 +25,5 @@ class AdditionNameViewController: UIViewController {
         }
         delegate?.addName(name: name)
     }
+
 }
