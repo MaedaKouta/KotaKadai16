@@ -39,16 +39,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     // itemの変更画面へ遷移
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
-        let changeNameNC = self.storyboard?.instantiateViewController(withIdentifier: "ChangeNameNC") as! UINavigationController
-        let changeNameVC = changeNameNC.topViewController as! ChangeNameViewController
-        changeNameVC.delegate = self
-        changeNameVC.setData(
-            target: .init(
-                index: indexPath.row,
-                name: checkItems[indexPath.row].name
-            )
+
+        present(
+            ChangeNameViewController.instantiateWithNavigationController(
+                delegate: self,
+                target: .init(
+                    index: indexPath.row,
+                    name: checkItems[indexPath.row].name
+                )
+            ),
+            animated: true,
+            completion: nil
         )
-        present(changeNameNC, animated: true, completion: nil)
     }
 
     // itemの追加画面へ遷移

@@ -25,6 +25,14 @@ class ChangeNameViewController: UIViewController {
 
     weak var delegate: ChangeNameViewControllerDelegate?
 
+    static func instantiateWithNavigationController(delegate: ChangeNameViewControllerDelegate, target: Target) -> UINavigationController {
+        let changeNameNC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ChangeNameNC") as! UINavigationController
+        let changeNameVC = changeNameNC.topViewController as! ChangeNameViewController
+        changeNameVC.delegate = delegate
+        changeNameVC.setData(target: target)
+        return changeNameNC
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let target = target else {
