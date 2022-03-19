@@ -17,6 +17,13 @@ class AdditionNameViewController: UIViewController {
     private let alertAppear = AlertAppear()
     weak var delegate: AdditionNameViewControllerDelegate?
 
+    static func instantiateWithNavigationController(delegate: AdditionNameViewControllerDelegate) -> UINavigationController {
+        let additionNameNC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AdditionNameNC") as! UINavigationController
+        let additionNameVC = additionNameNC.topViewController as! AdditionNameViewController
+        additionNameVC.delegate = delegate
+        return additionNameNC
+    }
+
     @IBAction private func didTapSaveButton(_ sender: Any) {
         guard let name = nameTextField.text, !name.isEmpty else {
             let alert = alertAppear.setAlert(message: "値を入力して下さい")

@@ -53,10 +53,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     // itemの追加画面へ遷移
     @IBAction private func didTapAddNameButton(_ sender: Any) {
-        let additionNameNC = self.storyboard?.instantiateViewController(withIdentifier: "AdditionNameNC") as! UINavigationController
-        let additionNameVC = additionNameNC.topViewController as! AdditionNameViewController
-        additionNameVC.delegate = self
-        present(additionNameNC, animated: true, completion: nil)
+        present(
+            AdditionNameViewController
+                .instantiateWithNavigationController(delegate: self),
+            animated: true,
+            completion: nil
+        )
     }
 
     @IBAction func cancelExit(segue: UIStoryboardSegue) {
