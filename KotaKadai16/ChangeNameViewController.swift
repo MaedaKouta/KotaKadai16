@@ -13,15 +13,33 @@ protocol ChangeNameViewControllerDelegate: AnyObject {
 
 class ChangeNameViewController: UIViewController {
 
+    struct Target {
+        let index: Int
+        let name: String
+    }
+
     @IBOutlet private weak var nameTextField: UITextField!
     private let alertAppear = AlertAppear()
-    private var choosingIndex = 0
-    private var name = ""
+
+    private var target: Target?
+
     weak var delegate: ChangeNameViewControllerDelegate?
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        nameTextField.text = name
+    static func instantiateWithNavigationController(delegate: ChangeNameViewControllerDelegate, target: Target) -> UINavigationController {
+        let changeNameNC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ChangeNameNC") as! UINavigationController
+        let changeNameVC = changeNameNC.topViewController as! ChangeNameViewController
+        changeNameVC.delegate = delegate
+        changeNameVC.setData(target: target)
+        return changeNameNC
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        guard let target = target else {
+            assertionFailure("target is nil")
+            return
+        }
+        nameTextField.text = target.name
     }
 
     @IBAction private func didTapSaveButton(_ sender: Any) {
@@ -30,12 +48,15 @@ class ChangeNameViewController: UIViewController {
             present(alert, animated: true)
             return
         }
-        delegate?.changeName(name: name, index: choosingIndex)
+        guard let target = target else {
+            assertionFailure("target is nil")
+            return
+        }
+        delegate?.changeName(name: name, index: target.index)
     }
 
-    func setData(name: String, index: Int) {
-        self.name = name
-        self.choosingIndex = index
+    func setData(target: Target) {
+        self.target = target
     }
 
 }
