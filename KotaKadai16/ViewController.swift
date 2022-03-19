@@ -42,7 +42,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let changeNameNC = self.storyboard?.instantiateViewController(withIdentifier: "ChangeNameNC") as! UINavigationController
         let changeNameVC = changeNameNC.topViewController as! ChangeNameViewController
         changeNameVC.delegate = self
-        changeNameVC.setData(name: checkItems[indexPath.row].name, index: indexPath.row)
+        changeNameVC.setData(
+            target: .init(
+                index: indexPath.row,
+                name: checkItems[indexPath.row].name
+            )
+        )
         present(changeNameNC, animated: true, completion: nil)
     }
 
